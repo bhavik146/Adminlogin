@@ -1,0 +1,128 @@
+<div class="task-detail-nav">
+    <mat-icon
+      [ngStyle]="{ margin: '10px', padding: '10px' }"
+      (click)="onBackspaceClick()"
+      >keyboard_backspace</mat-icon
+    ><span class="task-detail-heading">Task Farm</span>
+    <button mat-button class="logout-btn" (click)="logout()">Logout</button>
+  </div>
+  
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let task">
+        <span [id]="task._id + '_span_name'" class="task-detail-span">{{
+          task.name
+        }}</span>
+        <input
+          [id]="task._id + '_input_name'"
+          [ngStyle]="{ display: 'none' }"
+          class="task-detail-input"
+          type="text"
+          [value]="task.name"
+          (input)="
+            checkValidation(
+              'name',
+              task._id + '_input_name',
+              task._id + '_input_error_name',
+              task._id + '_update_btn'
+            )
+          "
+        />
+        <span class="text-danger-es" [id]="task._id + '_input_error_name'"
+          >*Required</span
+        >
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef>Username</th>
+      <td mat-cell *matCellDef="let task">
+        <span [id]="task._id + '_span_username'" class="task-detail-span">{{
+          task.username
+        }}</span>
+        <input
+          [id]="task._id + '_input_username'"
+          [ngStyle]="{ display: 'none' }"
+          class="task-detail-input"
+          type="text"
+          [value]="task.username"
+          (input)="
+            checkValidation(
+              'username',
+              task._id + '_input_username',
+              task._id + '_input_error_username',
+              task._id + '_update_btn'
+            )
+          "
+        />
+        <span class="text-danger-es" [id]="task._id + '_input_error_username'"
+          >*Required</span
+        >
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="password">
+      <th mat-header-cell *matHeaderCellDef>Password</th>
+      <td mat-cell *matCellDef="let task">
+        <span [id]="task._id + '_span_password'" class="task-detail-span">{{
+          task.password
+        }}</span>
+        <input
+          [id]="task._id + '_input_password'"
+          [ngStyle]="{ display: 'none' }"
+          class="task-detail-input"
+          type="text"
+          [value]="task.password"
+          (input)="
+            checkValidation(
+              'password',
+              task._id + '_input_password',
+              task._id + '_input_error_password',
+              task._id + '_update_btn'
+            )
+          "
+        />
+        <span class="text-danger-es" [id]="task._id + '_input_error_password'"
+          >*Required</span
+        >
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="update">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let task">
+        <button
+          mat-button
+          [id]="task._id + '_edit_btn'"
+          class="edit-btn"
+          (click)="editTask(task)"
+        >
+          <mat-icon class="editIcon">edit</mat-icon>Edit
+        </button>
+        <button
+          mat-button
+          [id]="task._id + '_update_btn'"
+          class="btnUpdate"
+          [ngStyle]="{ display: 'none' }"
+          (click)="updateTask(task)"
+          [disabled]="true"
+        >
+          Update
+        </button>
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let task">
+        <button mat-button class="btnDelete" (click)="deleteTask(task)">
+          Delete
+        </button>
+      </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  

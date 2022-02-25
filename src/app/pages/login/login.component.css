@@ -1,0 +1,33 @@
+.label-login {
+    position: relative;
+    left: 93px;
+    top: 9px;
+    font-size: 15px;
+  }
+  
+  .login-btn {
+    position: relative;
+    left: 50%;
+  }
+  
+  .login-heading {
+      position: relative;
+      font-weight: bolder;
+      color: rgb(190, 95, 16) !important;
+      font-size: 20px;
+      font-family: serif;
+  }
+  
+  .login-inputs {
+    position: relative;
+    left: 12%;
+  }
+  
+  .colored-container {
+    background-color: rgb(241, 241, 241);
+    padding: 50px;
+    border-radius: 19px;
+    position: relative;
+    box-shadow: 1px 1px 3px rgb(194 193 193);
+  }
+  

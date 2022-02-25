@@ -1,0 +1,82 @@
+.main-body {
+    position: relative;
+    left: 30%;
+  }
+  
+  .panel-body {
+    width: 60%;
+  }
+  
+  .panel-footer {
+    position: relative;
+    left: 10%;
+  }
+  
+  button:disabled {
+    background-color: lightgray;
+  }
+  
+  .label-login {
+    position: relative;
+    left: 26px;
+    top: 8px;
+    font-size: 15px;
+  }
+  
+  .colored-container {
+    background-color: rgb(241, 241, 241);
+    padding: 50px;
+    border-radius: 19px;
+    position: relative;
+    top: -28px;
+    left: -15%;
+    box-shadow: 1px 1px 3px rgb(194 193 193);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -202px;
+    margin-left: -15px;
+  }
+  
+  .gender-radio-group {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .gender-label {
+    position: relative;
+    left: 36px;
+    font-size: 15px;
+    top: 8px;
+  }
+  
+  .image-upload-btn {
+    position: relative;
+    left: -82px;
+    padding: 4px;
+    top: -2px;
+  }
+  
+  .registration-heading {
+    position: relative;
+    font-weight: bolder;
+    color: rgb(190, 95, 16) !important;
+    font-size: 20px;
+    font-family: serif;
+  }
+  
+  .register-submit-btn {
+    position: relative;
+    left: 8%;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
+  .file-input {
+    display: none;
+  }

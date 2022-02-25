@@ -1,0 +1,72 @@
+table {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  mat-icon {
+    cursor: pointer;
+  }
+  
+  .task-detail-input {
+    width: 137px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #008641;
+    text-align: center;
+    position: relative;
+    left: -28px;
+  }
+  
+  .editIcon {
+    position: relative;
+    font-size: 14px;
+    color: #008641;
+    top: 4px;
+  }
+  
+  .btnUpdate {
+    background-color: #228b22;
+    color: white !important;
+    font-size: 12px;
+    height: 34px;
+    width: 60%;
+  }
+  
+  .btnDelete {
+    background-color: #ff4500;
+    color: white;
+    font-size: 12px;
+    height: 34px;
+    width: 60%;
+  }
+  .logout-btn {
+    float: right;
+    background-color: rgb(236, 19, 19);
+    color: #fff;
+    margin-top: 15px;
+    left: -15px;
+  }
+  
+  .task-detail-nav {
+    background-color: cornsilk;
+    padding-bottom: 25px;
+  }
+  
+  .task-detail-heading {
+    position: relative;
+    left: 10px;
+    top: -6px;
+    font-size: 18px;
+  }
+  
+  .text-danger-es {
+    color: red;
+    display: none;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    color: #fff !important;
+  }
+  

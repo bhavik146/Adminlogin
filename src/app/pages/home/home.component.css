@@ -1,0 +1,31 @@
+.login-btn-group-container {
+    position: relative;
+    margin-top: 16%;
+}
+
+.login-btn-group {
+   position: relative;
+   top: 50%;
+   left: 18%;
+}
+
+.register-btn, .login-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 40px;
+    color: #fff;
+}
+
+.register-btn {
+    background-color: rgb(4, 223, 103);
+}
+
+.login-btn {
+    background-color: rgb(243, 24, 115);
+}
+
+.login-btn-group button{
+    padding: 10%;
+    font-size: 20px;
+}
